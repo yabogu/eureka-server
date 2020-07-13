@@ -1,5 +1,6 @@
 server:
   port: 8022
+  waitTimeInMsWhenSyncEmpty: 4000
 eureka:
   instance:
     hostname: byg-eureka-server2
@@ -10,4 +11,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.ip-address}:8021/eureka/,http://${eureka.instance.ip-address}:8023/eureka/
+      defaultZone: http://${eureka.instance.ip-address}:8021/eureka/
